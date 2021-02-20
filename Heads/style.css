@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.main {
+  width: 400px;
+  height: 500px;
+  background-color: cyan;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  flex-direction: column;
+  box-shadow: 10px 10px 5px green, 20px 20px 5px black, 30px 30px 5px whitesmoke;
+  border: 10px solid red;
+}
+
+.main input {
+  width: 300px;
+  height: 50px;
+  font-size: 40px;
+  outline: none;
+  font-family: fantasy;
+  margin: 20px;
+  transition: 1s;
+}
+
+.main input:focus {
+  background-color: black;
+  border: 10px solid yellow;
+  color: blanchedalmond;
+}
+
+.main select {
+  width: 200px;
+  height: 50px;
+  font-size: larger;
+  border: 5px solid black;
+  margin: 10px;
+  /*border-radius: 20px;*/
+  outline: none;
+  transition: all 1s;
+}
+
+.main button {
+  width: 200px;
+  height: 50px;
+  font-size: larger;
+  margin: 20px;
+  border: 5px solid black;
+  border-radius: 20px;
+  outline: none;
+  transition: all 1s;
+}
+
+#sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 10px solid yellow;
+  left: -220px;
+  background-color: black;
+  transition: all 1s;
+}
+
+input[type="button"] {
+  width: 200px;
+  height: 50px;
+  font-size: larger;
+  margin: 20px;
+  border: 10px solid white;
+  border-radius: 20px;
+  background: yellow;
+  outline: none;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+#sidebar.out {
+  left: 0px;
+}
+
+#sidebar.mainout {
+  left: -400px;
+}
+
+#sidebar #toogle {
+  position: absolute;
+  left: 250px;
+  top: 30px;
+  border: 3px solid yellow;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+#sidebar #toogle span {
+  display: block;
+  width: 30px;
+  height: 7px;
+  background-color: black;
+  margin: 5px 5px 5px 5px;
+}
+
+.lte {
+  background-color: red;
+}
+
+.hello {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  border: 5px solid black;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.hello h1 {
+  font-size: 20px;
+}
+
+.nonhello {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.lop {
+  display: flex;
+  flex-direction: column;
+}
+
+.lop p {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.shower {
+  border: 8px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input [type="number"]:focus {
+  border: 2px violet;
+}
+
+select {
+  cursor: pointer;
+}
+
+.shower {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  overflow-y: auto;
+}
+
+.shower input:focus {
+  border: 0px;
+  width: 300px;
+  height: 50px;
+  color: aliceblue;
+}
+
+.questionss select {
+  margin: 0;
+}
+
+.questionss {
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.questionss input {
+  margin: 5px;
+}
+
+.questionss input:focus {
+  border: 0px solid black;
+  background-color: blanchedalmond;
+  color: black;
+}
+
+.questionss2 select{
+  margin: 10px;
+}
+
+.questionss2 input {
+  margin: 5px;
+}
+
+.questionss2 input:focus {
+  border: 0px solid black;
+  background-color: blanchedalmond;
+  color: black;
+}
+
+.questionss2 {
+  padding-left: 10%;
+  overflow-y: auto;
+}
+
+.questionss2 p {
+  font-size: 40px;
+  font-family: fantasy;
+}

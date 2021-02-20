@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 400px;
+    height: 500px;
+    background-color: cyan;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px green, 20px 20px 5px black, 30px 30px 5px whitesmoke;
+    border: 10px solid red;
+}
+
+.main h1, h2 {
+    font-family: cursive;
+}
+
+.main h1 {
+    font-size: 40px;
+}
+
+.main h2 {
+    font-size: 30px;
+}
+
+.main button {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border: 10px solid black;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    transition: all 1s;
+}
+
+.main button:hover {
+    font-size: 40px;
+}
+
+.main marquee {
+    height: 60px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    background-color: lawngreen;
+    width: 300px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.messages {
+    width: 400px;
+    height: 500px;
+    background-color: cyan;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px green, 20px 20px 5px black, 30px 30px 5px whitesmoke;
+    border: 10px solid red;
+    margin-left: 40px;
+}
