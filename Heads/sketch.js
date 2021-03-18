@@ -40,15 +40,13 @@ function setup() {
   pass = select(".pass");
   select = select(".button");
   database = firebase.database();
-  //divTaskbar.hide();
-  database.ref("/").on("value", (data) => {
-    alldata = data.val();
-  });
   hrefman = window.location
   url = new URL(hrefman)
   loginster = url.searchParams.get('loginstate')
 
-  console.log(loginster);
+  database.ref('/').on("value", (data) => {
+    alldata = data.val();
+  });
 
   if (str(loginster) !== "1234111") {
     window.location = '../index.html';
@@ -56,6 +54,7 @@ function setup() {
   select.mousePressed(() => {
     console.log("hello");
     var OSName = "mobileuser";
+
     if (window.navigator.userAgent.indexOf("Windows NT 10.0") != -1)
       OSName = "Windows 10";
     if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1)
